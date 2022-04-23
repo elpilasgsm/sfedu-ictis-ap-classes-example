@@ -15,5 +15,6 @@ int Square::perimeter() {
 }
 
 int Square::area() {
+    std::cout << "Square Implementation Area" << std::endl;
     return side * side;
 }

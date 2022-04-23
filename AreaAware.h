@@ -5,9 +5,11 @@
 #ifndef CLASSES_AREAAWARE_H
 #define CLASSES_AREAAWARE_H
 
+#include <string>
+
 class AreaAware {
 public:
-    virtual int area() { return -1; }
+    virtual int area() { throw std::string("Method not implemented"); }
 };
 
 #endif //CLASSES_AREAAWARE_H
