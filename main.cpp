@@ -4,6 +4,8 @@
 #include "Figure.h"
 #include "Rectangle.h"
 #include "Square.h"
+#include "Circle.h"
+#include "Triangle.h"
 
 
 int main() {
@@ -29,6 +31,16 @@ int main() {
     std::cout << sq->area() << std::endl;
     std::cout << sq->perimeter() << std::endl;
     delete sq;
+
+    Circle *cq = new Circle(new Point(10, 10), 10);
+    std::cout << cq->area() << std::endl;
+    std::cout << cq->perimeter() << std::endl;
+    delete cq;
+
+    Triangle *triangle = new Triangle(new Point(10, 10), new Point(0, 5), new Point(1, 6));
+    std::cout << triangle->area() << std::endl;
+    std::cout << triangle->perimeter() << std::endl;
+    delete triangle;
 
     return 0;
 }

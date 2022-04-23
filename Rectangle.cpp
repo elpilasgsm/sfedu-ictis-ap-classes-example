@@ -20,6 +20,6 @@ Point **Rectangle::convertLengthsToPoints(int a, int b) {
 
 int Rectangle::area() {
     std::cout << "Rectangle Implementation area" << std::endl;
-    return this->points[0]->distance( this->points[1]) *  this->points[1]->distance( this->points[2]);
+    return (int) (this->points[0]->distance(this->points[1]) * this->points[1]->distance(this->points[2]));
 }
 
