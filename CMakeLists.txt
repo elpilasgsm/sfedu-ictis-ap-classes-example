@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 3.21)
+cmake_minimum_required(VERSION 3.0)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g" CACHE STRING "Default CXX options" FORCE)
 project(classes)
 
 set(CMAKE_CXX_STANDARD 14)

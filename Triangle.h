@@ -5,14 +5,24 @@
 #ifndef CLASSES_TRIANGLE_H
 #define CLASSES_TRIANGLE_H
 
+#include "Figure.h"
+#include <iostream>
+
 /**
  * TODO extend this Class from Figure class and Implement constructor, destructor,  perimeter and area methods in Triangle.cpp file
  */
-class Triangle {
+class Triangle : Figure {
 //TODO put your code here
 //you should define methods and constructor/destructor prototypes here and implement them in Triangle.cpp file
 //constructor must use the pointers to 3 apexes of the triangle.
+	Point** points;
+	public:
+		Triangle(Point *p1, Point *p2, Point *p3);
+		int perimeter() override;
 
+		int area() override;
+
+		~Triangle();
 };
 
 
