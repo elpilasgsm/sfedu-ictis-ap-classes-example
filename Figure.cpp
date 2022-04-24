@@ -3,6 +3,7 @@
 //
 
 #include "Figure.h"
+#include <iso646.h>
 #include <iostream>
 
 int Figure::perimeter() {

@@ -32,14 +32,19 @@ int main() {
     std::cout << sq->perimeter() << std::endl;
     delete sq;
 
-    Circle *cq = new Circle(new Point(10, 10), 10);
+    Point* cp = new Point(10, 10);
+    Circle *cq = new Circle(cp, 10);
     std::cout << cq->area() << std::endl; //answer near 314
     std::cout << cq->perimeter() << std::endl; //answer near 62,8
+    delete cp;
     delete cq;
 
-    Triangle *triangle = new Triangle(new Point(10, 10), new Point(0, 5), new Point(1, 6));
+    Point* tp[] = { new Point(10, 10), new Point(0, 5), new Point(1, 6) };
+    Triangle *triangle = new Triangle(tp[0] , tp[1] , tp[2]);
     std::cout << triangle->area() << std::endl; //answer near 2,506819
     std::cout << triangle->perimeter() << std::endl; //answer near 22,4432
+    for (int i = 0; i < 3; ++i)
+        delete tp[i];
     delete triangle;
 
     return 0;
