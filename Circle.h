@@ -12,6 +12,9 @@
  *
  */
 class Circle : public Figure {
+private:
+    int pi = 3.14;
+    int radius;
 public:
     Circle(Point *center, int radius);
 

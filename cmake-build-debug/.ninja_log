@@ -1,0 +1,9 @@
+# ninja log v5
+112	927	6726233192880294	CMakeFiles/classes.dir/Triangle.cpp.obj	d50a35f22e155fcb
+54	2492	6726233208533190	CMakeFiles/classes.dir/Point.cpp.obj	a4f1463dd5d9f0f4
+59	2499	6726233208543223	CMakeFiles/classes.dir/Rectangle.cpp.obj	13b1c54eb3428557
+61	2500	6726233208543223	CMakeFiles/classes.dir/Figure.cpp.obj	fd54e4520356e9af
+56	2500	6726233208533190	CMakeFiles/classes.dir/Square.cpp.obj	4ec8e267b6048aef
+93	2501	6726233208543223	CMakeFiles/classes.dir/Circle.cpp.obj	61f64a9c7db84595
+3	744	6726233595339108	CMakeFiles/classes.dir/main.cpp.obj	162ad2dc8ef41fc1
+744	1444	6726233602300979	classes.exe	37a7a3d5fa49ec6d
