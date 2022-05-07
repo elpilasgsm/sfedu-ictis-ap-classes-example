@@ -37,10 +37,10 @@ int main() {
     std::cout << cq->perimeter() << std::endl; //answer near 62,8
     delete cq;
 
-//    Triangle *triangle = new Triangle(new Point(10, 10), new Point(0, 5), new Point(1, 6));
-//    std::cout << triangle->area() << std::endl; //answer near 2,506819
-//    std::cout << triangle->perimeter() << std::endl; //answer near 22,4432
-//    delete triangle;
+    Triangle *triangle = new Triangle(new Point(10, 10), new Point(0, 5), new Point(1, 6));
+    std::cout << triangle->area() << std::endl; //answer near 2,506819
+    std::cout << triangle->perimeter() << std::endl; //answer near 22,4432
+    delete triangle;
 
     return 0;
 }
