@@ -6,20 +6,28 @@
 #define CLASSES_CIRCLE_H
 
 #include "Figure.h"
+#include <math.h>
 
 /**
  * TODO Implement constructor, destructor,  perimeter and area methods in Circle.cpp file
  *
  */
-class Circle : public Figure {
+class Circle :
+public:
+    Point *center;
+    int radius;
+
+        public Figure {
 public:
     Circle(Point *center, int radius);
+    }
 
-    int perimeter() override;
+    int perimeter();
 
-    int area() override;
+    int area();
 
     ~Circle();
+
 };
 
 
